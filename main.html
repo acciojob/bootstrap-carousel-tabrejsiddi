@@ -1,13 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <title>Bootstrap Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 3 (required for glyphicon icons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery + Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <!-- Write your code here -->
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+
+    <div class="item first-slide">
+      <div style="height:300px; background:#5bc0de; color:white; display:flex; align-items:center; justify-content:center;">
+        <h2>First Slide</h2>
+      </div>
+    </div>
+
+    <div class="item second-slide">
+      <div style="height:300px; background:#5cb85c; color:white; display:flex; align-items:center; justify-content:center;">
+        <h2>Second Slide</h2>
+      </div>
+    </div>
+
+    <!-- Active slide -->
+    <div class="item third-slide active">
+      <div style="height:300px; background:#f0ad4e; color:white; display:flex; align-items:center; justify-content:center;">
+        <h2>Third Slide (Active)</h2>
+      </div>
+    </div>
+
+    <div class="item fourth-slide">
+      <div style="height:300px; background:#d9534f; color:white; display:flex; align-items:center; justify-content:center;">
+        <h2>Fourth Slide</h2>
+      </div>
+    </div>
+
+    <div class="item fifth-slide">
+      <div style="height:300px; background:#9370db; color:white; display:flex; align-items:center; justify-content:center;">
+        <h2>Fifth Slide</h2>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Left arrow -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+
+  <!-- Right arrow -->
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
+</div>
+
 </body>
- 
 </html>
+
